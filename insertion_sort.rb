@@ -7,10 +7,7 @@ class InsertionSort
     current = array.shift
     counter += 1 
     counter.times do |i|
-      if sorted_array[0] == nil
-        sorted_array[i] = current
-      end
-      if sorted_array[i] == nil
+      if sorted_array.empty? || sorted_array[i] == nil
         sorted_array[i] = current
         break
       end
